@@ -1,0 +1,56 @@
+.Login {
+    border: 2px solid black;
+    margin-left: 18%;
+    margin-right: 18%;
+    margin-top: 5%;
+}
+.Logo{
+    /* background-image: url('https://media.git.generalassemb.ly/user/21811/files/546c2880-af58-11ec-917c-d9bd1e9dbecd'); */
+    /* width: 600px;
+    height: 400px; */
+    display: flex;
+}
+.Image {
+    width: 80%;
+    margin: 0 auto;
+}
+.Email-password {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid blue;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.Email {
+    border: 2px solid green;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.Password {
+    border: 2px solid red;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+.Login-button {
+ border: 2px solid purple;
+ margin-bottom: 5%;
+ background-color: rgb(88,153,223);
+ color: white;
+}
+.Forgot-signup {
+    display: flex;
+    flex-direction: row;
+}
+.Forgot {
+    margin: 0 auto;
+}
+.Separator{
+    margin: 0 auto;
+}
+.Sign-Up {
+    margin: 0 auto;
+}
+.Copyright {
+    margin: 0 auto;
+}

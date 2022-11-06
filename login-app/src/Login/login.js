@@ -1,29 +1,55 @@
 import React from 'react'
-import Home from '../Home/home'
+import './login.css'
 import { Route, Routes, Link } from 'react-router-dom'
+import { useState } from 'react'
 
 const Login = () => {
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+    const handleEmail = (event) => {
+        console.log(event.target.value)
+        setEmail (event.target.value)
+        //If email has text but no @ or '.':
+        //"Email should contain an '@' symbol."
+        //"Email should contain at least one dot."
+
+        //If click on email and value is empty:
+        //"Must provide an email"
+        //"Email should contain an '@' symbol."
+        //"Email should contain at least one dot."
+        if (event.target.value !== '@' || event.target.value !== '.') {
+            
+        }
+    }
+    const handlePassword = (event) => {
+        console.log(event.target.value)
+        setPassword (event.target.value)
+    }
     return (
-        <div>
+        <div className = 'Login'>
+            <div className = 'Logo'>
+                <img className='Image' src='https://media.git.generalassemb.ly/user/21811/files/546c2880-af58-11ec-917c-d9bd1e9dbecd'></img>
+            </div>
             <div className = 'Email-password'>
-                <input type='text' name='email' placeholder='Email' />
-                <input type='text' name='password' placeholder='Password' />
+                <input className = 'Email' type='text' name='email' value={email} placeholder='Email' onChange = {handleEmail}/>
+                <input className = 'Password' type='password' name='password' value={password} placeholder='Password' onChange = {handlePassword} />
                 <Link to={'/home'}>
-                    <button>Login</button>
+                    <button className = 'Login-button'>Login</button>
                 </Link>
                 <main>
-                    <Routes>
-                        <Route path='/home' element = { <Home />} />
-                    </Routes>
+                    <Link to={'/home'} />
+
                 </main>
             </div>
             <div className = 'App-register'>
-                <a href='#' >Forgot my password | </a>
-    
-                {/* <Link to={'/#'}>Forgot my password</Link> */}
-                <a href='#' >Sign Up </a>
-                 {/* <Link to={'/#'}>Sign Up</Link> */}
-                <p>© 2019 A Company</p>
+                <div className = 'Forgot-signup'>
+                    <a className='Forgot' href='#' >Forgot my password</a>
+                    <p className='Separator'> | </p>
+                    {/* <Link to={'/#'}>Forgot my password</Link> */}
+                    <a className = 'Sign-Up' href='#' >Sign Up </a>
+                    {/* <Link to={'/#'}>Sign Up</Link> */}
+                    <p className = 'Copyright'>© 2019 A Company</p>
+                </div>
             </div>
         </div>
     )
