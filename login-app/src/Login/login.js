@@ -18,9 +18,11 @@ const Login = () => {
                 </main>
             </div>
             <div className = 'App-register'>
-                <a href='#' >Forgot my password</a>
-                {/* <Link to={'/forgot-password'}>Forgot my password</Link> */}
+                <a href='#' >Forgot my password | </a>
+    
+                {/* <Link to={'/#'}>Forgot my password</Link> */}
                 <a href='#' >Sign Up </a>
+                 {/* <Link to={'/#'}>Sign Up</Link> */}
                 <p>© 2019 A Company</p>
             </div>
         </div>
