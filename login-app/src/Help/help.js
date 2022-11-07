@@ -5,7 +5,7 @@ import './help.css'
 const Help = () => {
     return (
         <div className='Help'>
-            <p>Need help? No problem! Email support@acompany or call 800-377-6915</p>
+            <p>Need help? No problem! Email <a href='mailto:supportoacompany'>support@acompany</a> or call 800-377-6915.</p>
         </div>
     )
 }

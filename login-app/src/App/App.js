@@ -1,9 +1,6 @@
 import './App.css';
 import React from 'react'
-import Login from '../Login/login'
-import Help from '../Help/help'
-import {useState} from 'react'
-import {Routes, Route, Link} from 'react-router-dom'
+import {Routes, Route} from 'react-router-dom'
 import Home from '../Home/home';
 import Main from '../Main/main'
 // import { Route, Routes, Link } from 'react-router-dom'

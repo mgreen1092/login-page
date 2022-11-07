@@ -1,5 +1,10 @@
 .Help {
     display: flex;
+    font-size: larger;
+    color: #323232;
     justify-content: center;
     align-items: center;
+    margin-top: 7%;
+    font-family: 'Roboto Slab', serif;
+    font-size: 28px;
 }
